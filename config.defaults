@@ -1,0 +1,4 @@
+API_KEY = '<paste_your_api_key_here>'
+EMAIL_ADDRESS = '<email_address you used to sign up to Dropbox Sign>'
+SIGNER_EMAIL_ADDRESS = '<friend_that_needs_to_sign_email_address'
+TEMPLATE_IDS = ['<paste_your_template_id_here']

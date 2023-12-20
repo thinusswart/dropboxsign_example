@@ -33,9 +33,9 @@ def main():
         signature_request_api = apis.SignatureRequestApi(api_client)
 
         signer_1 = models.SubSignatureRequestTemplateSigner(
-            role="Friend",
+            role="Developer",
             email_address=config.SIGNER_EMAIL_ADDRESS,
-            name="Good Friend",
+            name="Prospective Developer",
         )
 
         signing_options = models.SubSigningOptions(
@@ -48,8 +48,8 @@ def main():
 
         data = models.SignatureRequestSendWithTemplateRequest(
             template_ids=config.TEMPLATE_IDS,
-            subject="Friend Contract",
-            message="So glad you're my friend",
+            subject="Standard Developer NDA",
+            message="Please sign the NDA first",
             signers=[signer_1],
             signing_options=signing_options,
             test_mode=True,
